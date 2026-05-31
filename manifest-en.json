@@ -1,0 +1,26 @@
+{
+  "name": "Cargo Operations Training App",
+  "short_name": "Cargo Training",
+  "description": "Air cargo operations, aircraft capacities and ULD training tool",
+  "start_url": "/kargo-app/en.html",
+  "scope": "/kargo-app/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f1720",
+  "theme_color": "#e30613",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/kargo-app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/kargo-app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
