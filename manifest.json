@@ -1,0 +1,26 @@
+{
+  "name": "Kargo Operasyon Eğitim Uygulaması",
+  "short_name": "Kargo Eğitim",
+  "description": "THY Kargo operasyon, uçak kapasiteleri ve ULD eğitim aracı",
+  "start_url": "/kargo-app/",
+  "scope": "/kargo-app/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f1720",
+  "theme_color": "#e30613",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/kargo-app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/kargo-app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
