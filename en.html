@@ -1643,5 +1643,21 @@ document.title = "Cargo Operations Training App";
 const startTab = localStorage.getItem("kargo_tab") || "ozet";
 go(TABS.some(t=>t[0]===startTab)?startTab:"ozet");
 </script>
+<script>
+/* SW cache-buster: if this page was served stale (no gate), force fresh load */
+(function(){
+  if(!document.getElementById('_gate') && 'serviceWorker' in navigator){
+    navigator.serviceWorker.getRegistrations().then(function(regs){
+      var p=regs.map(function(r){return r.unregister();});
+      Promise.all(p).then(function(){
+        if(!sessionStorage.getItem('_reloaded')){
+          sessionStorage.setItem('_reloaded','1');
+          location.reload(true);
+        }
+      });
+    });
+  }
+})();
+</script>
 </body>
 </html>
